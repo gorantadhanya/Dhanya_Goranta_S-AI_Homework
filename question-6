@@ -1,0 +1,8 @@
+Question Title-Rename and organise
+Question Link-https://my.newtonschool.co/playground/code/3yjn3gg9vh7z
+Solution-mkdir final_notes
+mv draft.txt final_notes
+cd final_notes
+mv draft.txt notes.txt
+Approach-First I have created a folder using mkdir and then moved draft.txt to final_notes by using mv command
+then changed the directiory to final_notes and than renamed draft.txt to notes.txt by using mv command.
