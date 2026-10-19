@@ -1,0 +1,14 @@
+Question Title-The Internship Project Setup
+Question link-https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+Solution-cd client-app
+git init
+echo "Hii" > index.html
+git add index.html
+echo "Hii" > app.js
+git add app.js
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main
+git log
+Approach-Used cd to navigate to client-app directory then initialized git using git init then added contecnt to the files using echo and then staged the files using git add and then commited it using the command git commit -m by using the given content
+then used git remote add origin to add the remote repository and then pused it using git push -u origin main because we are pushing it for the first time then used git log as mentioned in the question to use it atleasr once at the end.
