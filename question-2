@@ -1,0 +1,16 @@
+Question Title-Locate and Extract the Recovery Key
+Question link-https://my.newtonschool.co/playground/code/cqphissddefs
+solution-cd backups
+ls
+cd archive
+ls
+cd legacy 
+ls
+cat recovery.txt
+cd ../../..
+pwd
+echo "oUkP5Z6ZOpayM7Gw" > key.txt
+Approach-So at first i have changed my directiory to backups and
+did ls to get to know whats inside  the backups directory and then i found archive in that then again went to archive directory
+and found legacy directory inside that i found a file recovery.txt to know the content inside that i used cat command and with that 
+i found the passcode then to save it in the file key.txt i used echo and the redirection symbol to write the passcode into key.txt file.
