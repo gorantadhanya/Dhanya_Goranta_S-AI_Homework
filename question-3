@@ -1,0 +1,15 @@
+Question Title-Advanced File Management
+Question link-https://my.newtonschool.co/playground/code/789exi2jqxb0
+solution-mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old/
+mv summary.docx final_summary.docx
+cp final_summary.docx old/
+rm report_backup.docx
+Approach-First i created a directory using mkdir and then navigated into it and used touch to create three files
+then used cp to copy paste the content allowing the report.docx to remain as it is
+then again created a new directory old using mkdir then moved draft.docx to old/ using mv then renamed a file using mv
+then again cp to copy a file into folder and lastly used rm to remove a file report_backup.docx 
