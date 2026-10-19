@@ -1,0 +1,19 @@
+Question Title-Data Breach Response
+Question Link-https://my.newtonschool.co/playground/code/n279b84yd51a
+Solution-cp breach_response/evidence/log_dump.txt breach_response/log_dump.txt
+chmod 777 breach_response/evidence/
+mv breach_response/evidence breach_response/secure
+chmod 555 breach_response/secure/evidence/
+chmod 777 breach_response/reports/incident_summary.txt
+echo "Breach confirmed" >> breach_response/reports/incident_summary.txt
+chmod 444 breach_response/reports/incident_summary.txt
+touch breach_response/secure/forensics_report.txt
+echo "Forensics Complete" >> breach_response/secure/forensics_report.txt
+chmod 600 breach_response/secure/forensics_report.txt
+chmod 777 breach_response/reports/incident_summary.txt
+echo "Escalated to security team" >> breach_response/reports/incident_summary.txt
+chmod 444 breach_response/reports/incident_summary.txt
+Approach-First,I copied the log_dump.txt file from the evidence directory to the breach_response directory.Then,I changed the permissions of the evidence directory to 777 to allow read,write and execute permissions for all users.
+Then moved the evidence directory to the secure directory and changed the permissions to 555 .Then,I changed the permissions of the incident_summary.txt file to 777.
+Then I appended the content using echo and >> to incident_summary.txt file and changed the permissions to 444.Then,I created a new file using touch command.Then again appended the content using echo and >> to forensics_report.txt file and changed the permissions to 600.Then again changed the permissions of incident_summary.txt file to 777 and appended the content using echo and >> to the file and again restricted the permissions to 444. And as mentioned in the question I did
+not modify classified.txt.
