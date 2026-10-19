@@ -1,0 +1,24 @@
+Question Title-Deployment Project Permissions
+Question Link-https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+Solution-cd deployment
+cd app
+chmod 700 server.py
+chmod 700 handler.py
+chmod 700 settings.py
+cd ..
+chmod 770 datasets
+cd datasets
+chmod 770 train.csv
+chmod 770 test.csv
+cd ..
+cd docs
+chmod 644 OVERVIEW.md
+cd ..
+cd bin
+chmod 755 start.sh
+chmod 755 stop.sh
+chmod 755 healthcheck.sh
+Approach-First I have changed my directory then again also changed directory to app to change the permissions using the chmod command 
+by using chmod 700 .py all the python files and then came back to the parent directory and then changed the permissions of datasets directory again changed the directory to datasets
+and used chmod to set the permissions to 770 of files inside the datasets.Then came back to the parent directory and then to docs and changed the permission of the file inside the docs directory.
+Then repeated the same for bin and changed the permissions of the files inside the bin using chmod.
