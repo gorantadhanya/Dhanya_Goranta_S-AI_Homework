@@ -1,0 +1,18 @@
+Question Title-Archiving a Release Directory
+Question Link-https://my.newtonschool.co/playground/code/18o1v16m4708
+solution-pwd
+ls
+mkdir archive
+cp -r release archive
+cd archive
+ls
+mv release release_v1
+cd ..
+rm -r release
+ls
+Approach-First of all i am using pwd to check where I am and them 
+used mkdir to create a folder them cp -r to copy paste all the content 
+from release to archive directory them changed my directory using cd to archive
+then ls to list the files and them used mv to rename release to release_v1
+then finaly changed directory to parent directory and used rm -r to remove release used -r because it 
+contains files 
