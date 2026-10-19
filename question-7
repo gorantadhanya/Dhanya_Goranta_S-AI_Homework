@@ -1,0 +1,10 @@
+Question Title-Selective Staging with Multiple Commits and Log Review
+Question Link-https://my.newtonschool.co/playground/code/1w3ip4kz4247
+Solution-echo "Hello" >> README.md 
+git add README.md
+git commit -m "Update readme"
+echo "Hii" >> main.py
+git add main.py
+git commit -m "Update main"
+git log --oneline
+Approach-Firstly i used echo to add content to the README.md file and then staged it using git add command.After that commited it using git commit -m command.Then radded content to main.py  file using echo and then staged it with git add and them commited it using git commit -m command.Finally used git log --oneline to view the commit history in a single or concise line format.
