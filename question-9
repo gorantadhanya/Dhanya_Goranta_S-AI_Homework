@@ -1,0 +1,7 @@
+Question Title-The Missing Project Credentials
+Question Link-https://my.newtonschool.co/playground/code/7x83ezx6nimm
+Solution-
+grep -r "DB_PASSWORD" 
+cat EventApp/config/.env > EventApp/db_password.txt
+Approach-Firstly I tried the longest method but later i got a thought of usuing the grep function which is used to search for the mentioned specific word beside the grep function and the -r works for searching it inside all the directories and the sub directories and all the files too which
+made the code small and easier to search then finally used the cat funtion to append the password to the file.
