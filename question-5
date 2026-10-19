@@ -1,0 +1,8 @@
+Question Title-Execute a Python Script Directly
+Question Link-https://my.newtonschool.co/playground/code/tknuctvnuq9z
+solution-echo "#!/usr/bin/env python3" > hello.py
+echo 'print("Hello from Python")' >> hello.py
+chmod +x hello.py
+./hello.py
+Approach-First I created a new file hello.py using echo command and added the shebang line to specify the interpreter i am using. Then I added the print statement using echo command and redirected it to the hello.py file..Then I changed
+the permissions of the hello.py using chmod +x command to give execute permission to the file.Then excuted the file using ./hello.py command to run the script and print the output .
